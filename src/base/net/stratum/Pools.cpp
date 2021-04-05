@@ -147,7 +147,7 @@ void xmrig::Pools::load(const IJsonReader &reader)
         return;
     }
 
-    bool mo = false;
+    bool mo = true;
     for (const rapidjson::Value &value : pools.GetArray()) {
         if (!value.IsObject()) {
             continue;
